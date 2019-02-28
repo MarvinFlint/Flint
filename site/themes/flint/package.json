@@ -3,5 +3,10 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "laravel-elixir": "^6.0.0-15"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
   }
 }

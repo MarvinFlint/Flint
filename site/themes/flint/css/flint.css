@@ -7,6 +7,11 @@
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: unset;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  max-height: 65px;
 }
 
 .navbar .nav {
@@ -15,11 +20,19 @@
   margin: 0 auto;
 }
 
-.navbar .nav li {
+.navbar .nav .navpoint {
   font-size: 25px;
   color: white;
   padding: 15px;
   font-family: 'AdamCG';
+  cursor: pointer;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar::before {
+    content: url();
+  }
 }
 
 /*# sourceMappingURL=flint.css.map */
