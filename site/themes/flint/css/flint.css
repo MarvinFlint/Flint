@@ -1,2 +1,25 @@
+@font-face {
+  font-family: AdamCG;
+  src: url("../fonts/adam_cg_pro.otf");
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: unset;
+  display: flex;
+}
+
+.navbar .nav {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navbar .nav li {
+  font-size: 25px;
+  color: white;
+  padding: 15px;
+  font-family: 'AdamCG';
+}
 
 /*# sourceMappingURL=flint.css.map */

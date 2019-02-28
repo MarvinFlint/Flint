@@ -1,0 +1,16 @@
+.navbar{
+    background-color: rgba(0,0,0, 0.8);
+    border-radius: unset;
+    display: flex;
+    .nav{
+        display: inline-flex;
+        align-items: center;
+        margin: 0 auto;
+        li{
+            font-size: 25px;
+            color: white;
+            padding: 15px;
+            font-family: 'AdamCG';
+        }
+    }
+}
