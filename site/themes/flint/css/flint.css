@@ -3,6 +3,12 @@
   src: url("../fonts/adam_cg_pro.otf");
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    margin-top: 65px;
+  }
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: unset;
@@ -11,7 +17,13 @@
   top: 0;
   left: 0;
   padding: 0;
-  max-height: 65px;
+}
+
+.navbar .mobile-menu {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin: 13px;
 }
 
 .navbar .nav {
@@ -30,8 +42,20 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .navbar::before {
-    content: url();
+  /*
+    .navbar::before{
+        content: url("../../../../../assets/menu_icon.png");
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        margin: 13px;
+    }
+    */
+  .navbar .mobile-menu {
+    display: block;
+  }
+  .navbar .nav {
+    display: none;
   }
 }
 

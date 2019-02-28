@@ -6,7 +6,12 @@
     top: 0;
     left: 0;
     padding: 0;
-    max-height: 65px;
+    .mobile-menu{
+        display: none;
+        width: 40px;
+        height: 40px;
+        margin: 13px;
+    }
     .nav{
         display: inline-flex;
         align-items: center;
@@ -23,7 +28,24 @@
 }
 
 @media only screen and (max-width: 1024px){
+    /*
     .navbar::before{
-        content: url()
+        content: url("../../../../../assets/menu_icon.png");
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        margin: 13px;
+    }
+    */
+    .navbar{
+        .mobile-menu{
+            display: block;
+        }
+        .nav{
+            display: none;
+            .navpoint{
+
+            }
+        }
     }
 }

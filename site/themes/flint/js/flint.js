@@ -10363,5 +10363,10 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+$(document).ready(function(){
+    $(".mobile-menu").click(function(){
+        $(".nav").slideToggle()
+    })
+})
 
 //# sourceMappingURL=flint.js.map
