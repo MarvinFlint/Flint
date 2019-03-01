@@ -21,15 +21,20 @@
         .navpoint:hover{
             background-color: lightgray;
         }
-        
-        .navpoint{
-            font-size: 25px;
-            color: white;
-            padding: 15px;
-            font-family: 'AdamCG';
-            cursor: pointer;
-            text-align: center;
-            transition: all 1s ease-in-out;
+
+        a{
+            text-decoration: none !important;
+            padding: 0;
+            .navpoint{
+                font-size: 25px;
+                color: white;
+                padding: 15px;
+                font-family: 'AdamCG';
+                cursor: pointer;
+                text-align: center;
+                transition: all 1s ease-in-out;
+                text-decoration: none;
+            }
         }
     }
 }

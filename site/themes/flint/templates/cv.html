@@ -1,0 +1,17 @@
+<div class="container">
+    <h1 class="title">{{ title }}</h1>
+    <hr>
+    <div class="selections col-12">
+        {{ collection from="cv_projects" }}
+        <div class="projects col-lg-3 col-md-6 col-sm-xs-12">
+            <h2 class="panel-title">{{ title }}</h2>
+            {{ assets:cv_project_thumbnails }}
+            <img class="panel-picture" src="{{ url }}">
+            {{ /assets:cv_project_thumbnails }}
+            <p>
+                {{ cv_project_desc }}
+            </p>
+        </div>
+        {{ /collection }}
+    </div>
+</div>

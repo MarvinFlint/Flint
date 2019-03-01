@@ -13,6 +13,10 @@
   padding-top: 20px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: unset;
@@ -41,7 +45,12 @@
   background-color: lightgray;
 }
 
-.navbar .nav .navpoint {
+.navbar .nav a {
+  text-decoration: none !important;
+  padding: 0;
+}
+
+.navbar .nav a .navpoint {
   font-size: 25px;
   color: white;
   padding: 15px;
@@ -49,6 +58,7 @@
   cursor: pointer;
   text-align: center;
   transition: all 1s ease-in-out;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -84,6 +94,27 @@
   text-transform: uppercase;
   font-family: 'AdamCG';
   font-size: 16px;
+}
+
+.container .selections {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.container .selections .projects {
+  padding: 0;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.container .selections .projects .panel-title {
+  font-family: "AdamCG";
+  text-align: center;
+}
+
+.container .selections .projects .panel-picture {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=flint.css.map */

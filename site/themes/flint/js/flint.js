@@ -10372,7 +10372,7 @@ $(document).ready(function(){
     $(".navpoint").click(function(){
         var clickedElement = $(this);
         clickedElement.css({
-            "color":"red"
+            
         })
     })
 })

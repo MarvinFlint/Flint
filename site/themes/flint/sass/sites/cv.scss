@@ -1,0 +1,19 @@
+.container{
+    .selections{
+        display: inline-flex;
+        flex-wrap: wrap;
+        .projects{
+            padding: 0;
+            border: 1px solid black;
+            margin: 0 auto;
+            .panel-title{
+                font-family: "AdamCG";
+                text-align: center;                
+            }
+            .panel-picture{
+                width: 100%;
+                height: auto; 
+            }
+        }        
+    }
+}

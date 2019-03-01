@@ -1,0 +1,18 @@
+sections:
+  main:
+    display: Main
+    fields:
+      cv_project_thumbnails:
+        container: main
+        folder: /
+        restrict: false
+        type: assets
+        display: 'cv project thumbnails'
+      cv_project_desc:
+        type: textarea
+        display: 'cv_project desc'
+      project_link:
+        type: text
+        display: 'project link'
+taxonomies: true
+title: projects
