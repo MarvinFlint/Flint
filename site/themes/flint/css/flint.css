@@ -3,10 +3,14 @@
   src: url("../fonts/adam_cg_pro.otf");
 }
 
-@media only screen and (max-width: 1024px) {
-  .container {
-    margin-top: 65px;
-  }
+.container {
+  padding-top: 65px;
+}
+
+.container .title {
+  text-align: center;
+  font-family: "AdamCG";
+  padding-top: 20px;
 }
 
 .navbar {
@@ -30,6 +34,11 @@
   display: inline-flex;
   align-items: center;
   margin: 0 auto;
+  padding: 0;
+}
+
+.navbar .nav .navpoint:hover {
+  background-color: lightgray;
 }
 
 .navbar .nav .navpoint {
@@ -39,24 +48,42 @@
   font-family: 'AdamCG';
   cursor: pointer;
   text-align: center;
+  transition: all 1s ease-in-out;
 }
 
 @media only screen and (max-width: 1024px) {
-  /*
-    .navbar::before{
-        content: url("../../../../../assets/menu_icon.png");
-        width: 40px;
-        height: 40px;
-        overflow: hidden;
-        margin: 13px;
-    }
-    */
   .navbar .mobile-menu {
     display: block;
   }
   .navbar .nav {
     display: none;
   }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer .footer-menu {
+  margin: 0 auto;
+}
+
+.footer .footer-menu ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .footer-menu ul li {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'AdamCG';
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=flint.css.map */

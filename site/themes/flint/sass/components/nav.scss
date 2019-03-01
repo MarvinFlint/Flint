@@ -16,6 +16,12 @@
         display: inline-flex;
         align-items: center;
         margin: 0 auto;
+        padding: 0;
+
+        .navpoint:hover{
+            background-color: lightgray;
+        }
+        
         .navpoint{
             font-size: 25px;
             color: white;
@@ -23,29 +29,20 @@
             font-family: 'AdamCG';
             cursor: pointer;
             text-align: center;
+            transition: all 1s ease-in-out;
         }
     }
 }
 
 @media only screen and (max-width: 1024px){
-    /*
-    .navbar::before{
-        content: url("../../../../../assets/menu_icon.png");
-        width: 40px;
-        height: 40px;
-        overflow: hidden;
-        margin: 13px;
-    }
-    */
+    
     .navbar{
         .mobile-menu{
             display: block;
         }
         .nav{
-            display: none;
-            .navpoint{
-
-            }
+            display: none;         
+                            
         }
     }
 }
