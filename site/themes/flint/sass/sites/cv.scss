@@ -6,6 +6,8 @@
             padding: 0;
             border: 1px solid black;
             margin: 0 auto;
+            transition: all 0.3s ease-in-out;
+            background-color: white;
             .panel-title{
                 font-family: "AdamCG";
                 text-align: center;                
@@ -14,6 +16,22 @@
                 width: 100%;
                 height: auto; 
             }
-        }        
+            .panel-text{
+                padding: 15px;
+                font-family: 'Open Sans';
+            }
+        }   
+        .projects:hover{
+            transform: scale(1.05);
+        }     
+    }
+}
+@media only screen and (max-width: 1024px){
+    .container{
+        .selections{
+            .projects{
+                margin: 15px auto;
+            }
+        }
     }
 }
