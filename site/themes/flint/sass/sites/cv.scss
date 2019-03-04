@@ -22,17 +22,22 @@
             }
         }   
         .projects:hover{
-            -webkit-box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.75);
-            -moz-box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.75);
-            box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.75);
-        }     
+            transform: scale(1.05);
+        }
+        .t1{
+            transition: all 1s ease-in-out;
+        }
+        .t2{
+            display: none;
+            transition: all 1s ease-in-out;
+        }
     }
 }
 @media only screen and (max-width: 1024px){
     .container{
         .selections{
             .projects{
-                margin: 15px auto;
+                margin-top: 15px;
             }
         }
     }
