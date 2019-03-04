@@ -1,4 +1,4 @@
-.container{
+.surround{
     .selections{
         display: inline-flex;
         flex-wrap: wrap;
@@ -10,11 +10,21 @@
             background-color: white;
             .panel-title{
                 font-family: "AdamCG";
-                text-align: center;                
+                text-align: center;         
+                font-size: 28px;       
             }
-            .panel-picture{
-                width: 100%;
-                height: auto; 
+            .panel-pic-wrapper{
+                padding: 0;
+                display: flex;
+                justify-items: center;
+                min-height: 50%;
+                width: 95%;
+                margin: 0 2.5%;
+                .panel-picture{
+                    width: 100%;
+                    height: auto; 
+                    margin: auto;
+                }
             }
             .panel-text{
                 padding: 15px;
@@ -34,9 +44,17 @@
             transform: scale(1.5);
         }
     }
+    .reset{
+        position: absolute;
+        right: 50px;
+        top: 100px;
+        background-color: red;
+        width: 50px;
+        height: 50px;
+    }
 }
 @media only screen and (max-width: 1024px){
-    .container{
+    .surround{
         .selections{
             .projects{
                 margin-top: 15px;

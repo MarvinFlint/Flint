@@ -10369,10 +10369,14 @@ $(document).ready(function(){
     })
 })
 $(document).ready(function(){
-    $(".navpoint").click(function(){
-        var clickedElement = $(this);
-        clickedElement.css({
-            
+    $(".reset").click(function(){
+        $(".t2").css({"opacity" : "0", "transform" : "scale(1.5)"}).delay(1000).slideUp(500, function(){
+            $(".t1").slideDown(500, function(){
+                $(".t1").css({
+                    "opacity" : "1",
+                    "transform" : "scale(1)"
+                })
+            })
         })
     })
 })

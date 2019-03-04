@@ -1,13 +1,15 @@
-<div class="container">
+<div class="surround col-12">
     <h1 class="title">{{ title }}</h1>
     <hr>
     <div class="selections col-12">
         <!-- Tier 1 Selectors -->
         {{ collection from="cv_projects" }}
-        <div id="{{ project_link }}" class="projects t1 col-lg-3 col-md-5 col-sm-xs-12">
+        <div id="{{ project_link }}" class="projects t1 col-lg-2 col-md-4 col-sm-xs-10">
             <h2 class="panel-title">{{ title }}</h2>
             {{ assets:cv_project_thumbnails }}
-            <img class="panel-picture" src="{{ url }}">
+            <div class="panel-pic-wrapper col-12">
+                <img class="panel-picture" src="{{ url }}">
+            </div>
             {{ /assets:cv_project_thumbnails }}
             <p class="panel-text">
                 {{ cv_project_desc }}
@@ -18,15 +20,46 @@
         <!-- Tier 2 Selectors -->
 
         {{ collection from="websites" }}
-        <div class="projects t2 websites col-lg-3 col-md-5 cold-sm-xs-12">
+        <div class="projects t2 websites col-lg-2 col-md-4 cold-sm-xs-10">
             <h2 class="panel-title">{{ title }}</h2>
             {{ assets:thumbnail }}
-            <img class="panel-picture" src="{{ url }}">
+            <div class="panel-pic-wrapper col-12">
+                <img class="panel-picture" src="{{ url }}">
+            </div>
             {{ /assets:thumbnail }}
             <p class="panel-text">
                 {{ description }}
             </p>
         </div>
         {{ /collection }}
+        {{ collection from="games" }}
+        <div class="projects t2 games col-lg-2 col-md-4 cold-sm-xs-10">
+            <h2 class="panel-title">{{ title }}</h2>
+            {{ assets:thumbnail }}
+            <div class="panel-pic-wrapper col-12">
+                <img class="panel-picture" src="{{ url }}">
+            </div>
+            {{ /assets:thumbnail }}
+            <p class="panel-text">
+                {{ description }}
+            </p>
+        </div>
+        {{ /collection }}
+        {{ collection from="cv" }}
+        <div class="projects t2 cv col-lg-2 col-md-4 cold-sm-xs-10">
+            <h2 class="panel-title">{{ title }}</h2>
+            {{ assets:thumbnail }}
+            <div class="panel-pic-wrapper col-12">
+                <img class="panel-picture" src="{{ url }}">
+            </div>
+            {{ /assets:thumbnail }}
+            <p class="panel-text">
+                {{ description }}
+            </p>
+        </div>
+        {{ /collection }}
+    </div>
+    <div class="reset">
+        
     </div>
 </div>
