@@ -18,7 +18,10 @@ $(document).ready(function(){
         var ClickedEleId = $(this).attr("id");
         $(".t1").css("opacity", "0").delay(1000).slideUp(500, function(){
             $("." + ClickedEleId).slideDown(500, function(){
-                $("." + ClickedEleId).css("opacity", "1");
+                $("." + ClickedEleId).css({
+                    "opacity" : "1",
+                    "transform" : "scale(1)"
+                });
             })
         })
     })

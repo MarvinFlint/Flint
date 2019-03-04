@@ -30,6 +30,8 @@
         .t2{
             display: none;
             transition: all 1s ease-in-out;
+            opacity: 0;
+            transform: scale(1.5);
         }
     }
 }

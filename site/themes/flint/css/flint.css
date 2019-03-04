@@ -137,6 +137,8 @@ a {
 .container .selections .t2 {
   display: none;
   transition: all 1s ease-in-out;
+  opacity: 0;
+  transform: scale(1.5);
 }
 
 @media only screen and (max-width: 1024px) {
